@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valar Morghulis | L2</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/level2.js"></script>
+    <link rel="stylesheet" href="../css/level2.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/model.js"></script>
+    <link rel="stylesheet" href="../css/model.css">
+    <link rel="stylesheet" href="../css/level2.css">
+    <script src="../js/noreload.js"></script>
+    
+</head>
+<body>
+    <div id="page">
+        <div id="que">
+            <code>
+                The King in the North is approaching south to become the Protector of the Realm. He has fleet of Wildlings, but that is not enough. Counsel him, which houses can join and make his army strong. Here is the map of Westeros mark and spot the routes he should follow to head towards King's Landing, the place to ultimate victory.
+            </code>
+        </div>
+        <div id="map_div">
+            <div id="map">
+                <svg id="svg_1" style="position:absolute" width="100%" height="100%"><line x1="268" y1="135" x2="350" y2="150" stroke="red" stroke-width="3"/></svg>
+                <svg id="svg_2" style="position:absolute" width="100%" height="100%"><line x1="350" y1="150" x2="320" y2="185" stroke="red" stroke-width="3"/></svg>
+                <svg id="svg_3" style="position:absolute" width="100%" height="100%"><line x1="320" y1="185" x2="380" y2="285" stroke="red" stroke-width="3"/></svg>
+                <svg id="svg_4" style="position:absolute" width="100%" height="100%"><line x1="380" y1="285" x2="235" y2="320" stroke="red" stroke-width="3"/></svg>
+                <svg id="svg_5" width="100%" height="100%"><line x1="235" y1="315" x2="375" y2="375" stroke="red" stroke-width="3"/></svg>
+                
+                <div class="node node_active" id="winter">
+                    <div class="text">
+                        Winterfell
+                    </div>
+                </div>
+                <div class="node" id="horn">
+                    <div class="text">
+                        Horn wood
+                    </div>
+                </div>
+                <div class="node" id="white">
+                    <div class="text">
+                        White Harbour
+                    </div>
+                </div>
+                <div class="node" id="eyrie">
+                    <div class="text">
+                        The Eyrie
+                    </div>
+                </div>
+                <div class="node" id="river">
+                    <div class="text">
+                        Riverrun
+                    </div>
+                </div>
+                <div class="node" id="king">
+                    <div class="text">
+                        King's Landing
+                    </div>
+                </div>
+                <div class="node" id="twin">
+                    <div class="text">
+                        The Twins
+                    </div>
+                </div>
+                <div class="node" id="island">
+                    <div class="text">
+                        Iron Islands
+                    </div>
+                </div>
+                <div class="node" id="harren">
+                    <div class="text">
+                        Harrenhal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div">
+        <p id="demo"></p>
+    </div>
+</body>
+</html>

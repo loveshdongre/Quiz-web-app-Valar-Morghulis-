@@ -1,0 +1,138 @@
+body {
+    margin:0;
+}
+#page {
+    background: #151515;;
+    width:100%;
+    height: 100vh;
+}
+
+#title {
+    color:lightseagreen;
+    font-size:3.2em;
+    width:100%;
+    text-align: center;
+    height:100px;
+    padding-top:30px;
+    letter-spacing: 5px;
+}
+
+#ques {
+    color:rgb(207, 197, 197);
+    font-size: 1.6em;
+    width:900px;
+    margin: 0 auto;
+}
+#symbol {
+
+    width:100%;
+    height: 200px;
+    display: flex;
+    margin-top: 80px;
+}
+#left { 
+    height: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    color:white;
+    font-size: 18px;    
+    justify-content: center;
+}
+#left div {
+    text-align: center;
+    height: 80px;
+    letter-spacing: 5px;
+}
+#empty {
+    flex:0.5;
+    width:200px;
+}
+#johny {
+    flex:0.5;
+    width:200px;
+}
+#right {
+    
+    height: 100%;
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+}
+#cross {
+    width: 200px;
+    height: 200px;
+}
+#dot_cross {
+    width:200px;
+    height: 200px;
+}
+#long_img {
+    width:500px;
+}
+#s_code {
+    color:white;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top:40px;
+    width:80%;
+}
+
+#answer{
+    width:100%;
+    text-align: center;
+    margin-top:20px;
+}
+
+#sym_inp {
+    background:none;
+    border:none;
+    border-bottom:2px solid lightseagreen;
+    color:white;
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding: 10spx;
+    width:350px;
+    height: 50px;
+    padding-right:110px;
+}
+#sym_inp:focus {
+    outline:none;
+}
+#sym_submit {
+    background:none;
+    border:none;
+    border:2px solid white;
+    letter-spacing: 3px;
+    height:40px;
+    width:100px;
+    color:white;
+    font-weight: bold;
+    transition:400ms;
+    margin-left:-105px;
+}
+#sym_submit:hover {
+    border:2px solid lightseagreen;
+    color:lightseagreen;
+}
+#sym_submit:focus{
+    outline:none;
+}
+
+
+/*timing modal*/
+.modal-dialog {
+    height:100%;
+    width:100%;
+    min-width:100vw;
+}
+
+.modal-content {
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    border-radius:0px;
+}
+/*timing modal end */

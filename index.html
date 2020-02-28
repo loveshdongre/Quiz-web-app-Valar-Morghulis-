@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Convolution | Valar Morghulis</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.html">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	
+	<!-- Countdown Stylesheet -->
+	<link rel="stylesheet" href="assets/css/jquery.classycountdown.min.css">
+	
+	<!-- Animate Stylesheet 
+		<link rel="stylesheet" href="assets/css/animate.css">-->
+		
+		<script src="../js/jquery.min.js"></script>
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		
+		<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script src="js/noreload.js"></script>
+</head>
+
+<body>	
+	<section id="wrapper" class="black">
+
+		<div class="container-fluid animated" id="home">
+			<div class="row logo-row">
+				<a href="#" class="brand">
+					<img src="assets/images/logo_nobackground.png" style="height:100px;">
+				</a>
+			</div><!-- Brand Logo -->
+			<div class="middle-area">
+				<div class="row" style="text-align: center">
+					
+						<img src="assets/images/valar.png" style="height:250px">
+					
+					<p class="title">Valar Morghulis</p>
+					<p class="subtitle">Bas Trivedi Bach Jayega</p>
+				</div> <!-- Title & Subtitle -->
+
+				<div class="row">
+					<div class="subscribe text-center">			
+
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+							<div class="row">
+								<div class="success_msg"></div>
+								<form method="post" id="news">
+									<div class="input-group" style="margin-top:80px;">
+										<input type="text" class="form-control" placeholder="Enter token number here" required id="input" name="token">
+
+										<span class="input-group-btn">
+											<button class="btn btn-default" id="submit" type="submit" name="submit"><i class="fi flaticon-check"></i></button>
+										</span>
+									</div>
+									<!-- /input-group -->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div><!-- Subscription -->
+			</div>
+			<div class="row footer">
+				
+				
+
+				
+			</div> <!-- Footer -->
+			
+			<!-- Page Links -->
+			
+		</div> <!-- Home Page -->
+		
+		<div class="container-fluid otherpage animated" id="about">
+		
+			
+			<div class="container discription">
+				<div class="col-md-10 col-md-offset-2 text-center">
+
+					<h1 class="title">about us</h1>
+					<h6 class="subtitle">Creative by nature, Passionate by design.</h6>
+					<section>
+						<h4>We are a creative team of talented professionals.</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis sem. consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+						</p>
+						<p>
+							Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.
+						</p>
+					</section>
+					<a href="#" class="closeModal" onclick="closeModal(this, event)">
+						<i class="fi flaticon-circle-1"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section><!-- Main Wrapper -->
+
+
+
+	<script src="assets/js/vendor/jQuery-1.12.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.classycountdown.min.js"></script>
+	<script src="assets/js/jquery.knob.js"></script>
+	<script src="assets/js/jquery.throttle.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+	<script>
+	$(document).keyup(function(evtobj) {     
+                if (!(evtobj.altKey || evtobj.ctrlKey || evtobj.shiftKey)){
+    if (evtobj.keyCode == 16) {return false;}
+                    if (evtobj.keyCode == 17) {return false;}
+    $("body").append(evtobj.keyCode + " ");
+                }
+});
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+// slight update to account for browsers not supporting e.which
+function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+// To disable f5
+    /* jQuery < 1.7 */
+$(document).bind("keydown", disableF5);
+/* OR jQuery >= 1.7 */
+$(document).on("keydown", disableF5);
+
+// To re-enable f5
+    /* jQuery < 1.7 */
+$(document).unbind("keydown", disableF5);
+/* OR jQuery >= 1.7 */
+$(document).off("keydown", disableF5);
+
+
+	</script>
+</body>
+
+</html>

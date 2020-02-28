@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+#page {
+    background: #151515;;
+    width:100%;
+    height: 100vh;
+    display: flex;
+}
+code {
+    
+    font-size: 20px;
+}
+#que {
+    text-align: justify;    
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+    flex:0.3;    
+    padding-top:30px;
+}
+#map_div {    
+    flex:0.7;    
+    text-align: center;
+}
+
+#map {
+    background: url("../media/map.jpeg");
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:600px;
+    width:650px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-left:100px;
+}
+
+.node {
+    background-color:lightseagreen;
+    height:15px;
+    width:15px;
+    border-radius:2em;
+    position: absolute;
+}
+.node .text {
+    color:blueviolet;
+    font-weight: bold;
+    margin-top:-20px;
+    margin-left:-50px;
+    width:130px;
+}
+
+#winter {
+    top:130px;
+    left:268px;    
+}
+
+#horn {
+    top:145px;
+    left:345px;
+}
+
+#white {
+    top:180px;
+    left:310px;
+}
+
+#eyrie {
+    top:280px;
+    left:375px;
+}
+
+#river {
+    top: 310px;
+    left:235px;
+
+}
+#king {
+    top: 368px;
+    left:368px;
+    
+}
+#twin {
+    top: 255px;
+    left:245px;
+}
+#island {
+    top: 285px;
+    left:130px;
+}
+#harren {
+    top: 323px;
+    left:305px;
+}
+
+.node:hover {
+    background-color:orangered;
+    transform: scale(1.05)
+}
+
+#winter {
+    background-color:orangered;
+}
+
+.node_active {
+    border: 2px solid black;
+    background-color:orangered;
+}
